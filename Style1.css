@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #171a1c;
+  }
+  
+
+.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      color: white;
+      background-color: #171a1c; /* Ajoutez une couleur de fond appropriée */
+      z-index: 1000; /* Assurez-vous qu'elle est au-dessus des autres éléments */
+  }
+  
+  
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0 6.5%;
+  }
+  
+  span{
+    color: #ff274b;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .color:hover { 
+    color: #ff274b;
+  }
+  
+  .contact-link {
+    background-color: #ff274b;
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+  }
+  .contact-link:hover{
+    background-color: #171a1c;
+    color: white;
+    border: 2px solid #ff274b;
+  }
+
+ 
+.Sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8%;
+    align-items: center;
+    height: 100vh;
+}
+
+.TextP{
+  position:relative;
+  top: -70px;
+}
+
+.Bienv{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.Qui{
+    color:white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.WEB{
+    color: #ff274b;
+}
+
+.Prenom{
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+}
+
+.Ciss{
+    color: #ff274b;
+}
+
+#Button{
+        margin-top: 20px;
+        background-color: #ff274b;
+        border:1px solid #ff274b;
+        border-radius: 100px;
+        padding: 10px 20px;
+        color: white;
+}
+
+.Messervices{
+  height: 100vh;
+  background-color: #171a1c;
+padding: 8%;
+}
+
+.Cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Service{
+  margin: 50px auto;
+  border: 1 solid #FFF;
+  border-radius: 20px;
+  box-shadow:0px 0px 2px black;
+  height: 350px;
+  width: 350px;
+  background-color: #FFF;
+}
+.Sp{
+  width: 60%;
+  color: #171a1c;
+  font-size: 16px;
+  margin-top: 70px;
+  margin-left: 20%;
+}
+.Sh2{
+  text-align: center;
+  color: #ff274b;
+  margin-top: 10px;
+}
+
+.TitreMS {
+  font-size: 30px;
+  font-weight: bold;
+  color: #171a1c;
+  text-align: center; 
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.AproposSec{
+    background-color: #22282a;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem 8%;
+}
+
+.AproposSec .imgA{
+  width: 35% ; 
+}
+
+.AproposSec .imgA img{
+    width: 90%;
+}
+
+.AproposSec .Moi{
+  width: 35%;
+}
+.Apropos{
+   color: #FFF;
+   margin-bottom: 1rem;
+   font-size: 2rem;
+}
+.demoi{
+  color: #ff274b;
+}
+h5{
+   font-size: 1.37;
+   margin-bottom: 1.5rem;
+   letter-spacing: 2px;
+   color: #FFF;
+}
+
+.AproposMoi{
+  color: #FFF;
+}
+
+.DevAngular{
+  color: #ff274b;
+}
+
+.TitreMS{
+  color: #FFF;
+  margin-bottom:10%;
+  margin-top: 0;
+}
+.ContS{
+  display: flex;
+  justify-content: space-between;
+}
+
+.DivS{
+  width:300px;
+  height: 380px;
+  background-color: #22282a;
+  padding:  1.3rem 2rem ;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+
+}
+i{
+  font-size: 3.12rem;
+  text-align: center;
+  margin: 2rem;
+}
+.ParaS{
+margin-left: 1rem;
+margin-right: 1rem;
+}
+h4{
+  margin-bottom: 1.5rem;
+}
+
+.menu-toggle {
+  display: none; /* Caché par défaut sur les écrans larges */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Styles pour la section de contact */
+.contact-section {
+  background-color: #22282a;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ margin-top: 50px;
+  width: 100vw; /* Utiliser la largeur de la fenêtre */
+  margin-left: calc(-50vw + 50%); /* Centrer horizontalement */
+  margin-right: calc(-50vw + 50%); /* Centrer horizontalement */
+  position: relative; /* Ajouter une position relative pour éviter le débordement */
+}
+
+.contact-container {
+  background-color: #171a1c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 660px; /* Ajustez la largeur maximale selon vos besoins */
+}
+
+.contact-title {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 5px;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-button {
+  background-color: #ff274b;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #f01a3c;
+}
+
+/* ... Vos styles existants ... */
+
+@media screen and (max-width: 756px) {
+  /* ... Vos styles existants ... */
+ /* Vos styles existants */
+
+/* Styles pour le bouton de bascule */
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    background-color: #171a1c;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; /* Pour que le bouton soit à droite*/
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    z-index: 1001; /* S'assurer que le bouton est au-dessus du menu */
+  }
+
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+  }
+
+  /* ... Vos styles existants ... */
+
+  .menu-open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .menu-open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+
+  /* ... Vos styles existants ... */
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: #171a1c;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0 auto;
+    padding: 8%;
+  }
+
+  .Sec{
+    padding: 10%;
+  }
+  .AproposSec{
+    padding: 10%;
+  }
+
+  /* ... Vos styles existants ... */
+
+
+  .AproposSec .imgA {
+    display: none;
+  }
+
+  .AproposSec .Moi {
+    width: 100%;
+  }
+
+  .Apropos {
+    text-align: center;
+  }
+
+  h5 {
+    text-align: center;
+  }
+
+  .ContS {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .DivS {
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  .imageN {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .AproposSec .imgA {
+    display: none;
+  }
+
+  .AproposSec .Moi {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .ContS {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .DivS {
+    width: 300px;
+    height: 370px;
+    margin: 0 auto;
+  }
+
+  .imageN {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 756px) {
+  /* ... Vos styles existants ... */
+  
+  .Messervices {
+    margin-top: 120px; /* Ajustez cette valeur selon vos besoins */
+  }
+
+  .contact-section {
+   
+    width: 100vw; /* Ajustez les paddings horizontaux */
+    padding: 10%;
+    min-height: calc(100vh - 10px); /* Ajustez la hauteur en fonction de la taille de l'écran */
+    margin-top: 200px; /* Ajoutez cette règle pour éviter le chevauchement */
+
+  }
+.contact-container{
+  padding: 10%;
+}
+/* ... Vos styles existants ... */
+}
